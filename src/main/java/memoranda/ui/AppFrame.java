@@ -274,11 +274,15 @@ public class AppFrame extends JFrame {
                 doExit();
             }
         });
+
+        //Changed the header of this menu selection from "Help" to "Support"
         jMenuHelp.setText(Local.getString("Support"));
         
         jMenuHelpGuide.setText(Local.getString("Online user's guide"));
+
+        //Changed the Icon for the users guide from help.png to error.png
         jMenuHelpGuide.setIcon(new ImageIcon(AppFrame.class.getResource(
-                "/ui/icons/help.png")));
+                "/ui/icons/error.png")));
         jMenuHelpGuide.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 jMenuHelpGuide_actionPerformed(e);
