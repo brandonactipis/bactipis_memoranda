@@ -277,8 +277,10 @@ public class AppFrame extends JFrame {
 
         //Changed the header of this menu selection from "Help" to "Support"
         jMenuHelp.setText(Local.getString("Support"));
-        
-        jMenuHelpGuide.setText(Local.getString("Online user's guide"));
+
+
+        //Changed text from "Online user's guide" to "Online user's wiki"
+        jMenuHelpGuide.setText(Local.getString("Online user's wiki"));
 
         //Changed the Icon for the users guide from help.png to error.png
         jMenuHelpGuide.setIcon(new ImageIcon(AppFrame.class.getResource(
